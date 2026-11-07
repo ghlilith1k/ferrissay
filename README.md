@@ -35,7 +35,6 @@ the program in the future.
 - fix text box glitching when phrase gets really long
 - make Ferris prettier
 - make new Ferris variations and enable them with flags
-- fix text box having "ferrissay" before actual phrase
 
 # Changelog
 (NFY means not finished yet)

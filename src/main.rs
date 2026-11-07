@@ -23,7 +23,7 @@ fn main() {
     
     // VARIABLES
     // every words the user wrote.
-    let args: Vec<String> = env::args().collect();
+    let mut args: Vec<String> = env::args().collect();
     // printed text box phrase containing all words the user wrote.
     let mut ferris_text_box_message: String = String::new();
     // printed top text box lines.
@@ -47,6 +47,8 @@ fn main() {
         println!("usage: ferrissay [something...]");
         return()
     }
+    // removes first argument since it's not supposed to get printed
+    args.remove(0);
     // this makes all words getting printed without using quotes.
     for arg in args {
         ferris_text_box_message.push_str(&format!("{} ", arg))
