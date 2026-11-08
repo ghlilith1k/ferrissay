@@ -28,7 +28,7 @@ visual bugs for now but i'm gonna fix them in the future.
 # About
 **note: ferrissay has only been tested on GNU/linux, stability/full functionality and compilation on other OSes is not guaranteed.**
 
-- current version: 0.1.0 BETA
+- current version: 0.1.1 BETA
 - current stable: none
 - AI code: none
 - for future releases: see "Dev Notes"
