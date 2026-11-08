@@ -1,5 +1,5 @@
-// ferrissay, a cowsay remake using Rust's mascot "Ferris", written in Rust, obviously.
-// Copyright (C) 2026 ghlilith1k
+// ferrissay, a cowsay remake using Rust's mascot "Ferris", written in Rust, obviously
+// Copyright (c) 2026 ghlilith1k
 
 // This program is free software; you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -71,7 +71,7 @@ fn main() {
     // check if atleast one word is present, if not, print help message and terminate program early.
     if ferris.words.len() == 1 {
         println!(
-            "ferrissay version 0.1.1 BETA, (C) 2026 ghlilith1k\nusage: ferrissay [-u] [message]"
+            "ferrissay v0.1.1-beta, (c) 2026 ghlilith1k\nsee https://github.com/ghlilith1k/ferrissay for details\n\x20usage: ferrissay [-u] [message]"
         );
         return;
     }
