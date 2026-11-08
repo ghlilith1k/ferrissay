@@ -53,6 +53,7 @@ just the standard program, starting point for future releases
 
 ## release v0.1.1-beta - packaged
 
+- modified makefile and Cargo.toml
 - added ferries.claws_down and made it default
 - added very basic argument parsing logic
 - modified text box design
