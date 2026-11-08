@@ -44,7 +44,7 @@ visual bugs for now but i'm gonna fix them in the future.
 just the standard program, starting point for future releases
 
 ## release 0.1.1 BETA - pending
-- added ferries_claws_down and made it default
+- added ferries.claws_down and made it default
 - modified bubble design
 - switched from free variables to struct
 - fixed first-argument bug, now the command itself doesn't get printed
