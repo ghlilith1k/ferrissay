@@ -66,7 +66,7 @@ fn main() {
           \\     //",
     };
 
-    // MAIN LOGICS
+    // MAIN LOGICS AND FORMATTING
 
     // check if atleast one word is present, if not, print help message and terminate program early.
     if ferris.words.len() == 1 {
@@ -98,10 +98,10 @@ fn main() {
     // pushes all text boxt lines chars minus one for pretty formatting.
     for _ in 0..ferris.text_box_lines_count - 1 {
         ferris.text_box_lines_top.push_str("_");
-        ferris.text_box_lines_bottom.push_str("-")
+        ferris.text_box_lines_bottom.push_str("r")
     }
 
-    // FORMATTING AND PRINTING
+    // PRINTING
 
     // very confusing formatting, isn't it?
     if !ferris.claws_up_check {

@@ -1,6 +1,6 @@
 # ferrissay
 
-a cowsay remake using Rust's mascot "Ferris", obviously written in Rust
+a cowsay remake using Rust's mascot "Ferris", written in Rust, obviously
 
 Copyright (C) 2026 ghlilith1k
 
@@ -42,6 +42,10 @@ visual bugs for now but i'm gonna fix them in the future.
 - fix text box glitching when phrase gets really long
 - make Ferris prettier
 - make new Ferris variations and enable them with flags
+- the whole program overflows if a word contains the -u argument attached, i don't know why
+- improve argument parsing logic
+- ferrissay hangs when -u is passed but message is empty
+- modify both visual and code design in the future
 
 # Changelog
 
@@ -49,9 +53,12 @@ visual bugs for now but i'm gonna fix them in the future.
 
 just the standard program, starting point for future releases
 
-## release 0.1.1 BETA - pending
+## release 0.1.1 BETA - packaged
 
 - added ferries.claws_down and made it default
+- added very basic argument parsing logic
 - modified bubble design
 - switched from free variables to struct
 - fixed first-argument bug, now the command itself doesn't get printed
+- formatted code
+- some other small fixes...
