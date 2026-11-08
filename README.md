@@ -47,7 +47,7 @@ visual bugs for now but i'm gonna fix them in the future.
 
 # Changelog
 
-## release v0.1.1-beta - packaged
+## release v0.1.0-beta - packaged
 
 just the standard program, starting point for future releases
 
