@@ -2,13 +2,13 @@
 
 a cowsay remake using Rust's mascot "Ferris", written in Rust, obviously
 
-Copyright (C) 2026 ghlilith1k
-
-distributed on the GNU/GPLv2 license. see https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
-
 <p align="center">
   <img src="https://github.com/ghlilith1k/ferrissay/blob/main/assets/ferrissay.png" alt="ferrissay preview"/>
 </p>
+
+Copyright (C) 2026 ghlilith1k
+
+distributed on the GNU/GPLv2 license. see https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
 # Description
 
