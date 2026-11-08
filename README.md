@@ -32,9 +32,8 @@ visual bugs for now but i'm gonna fix them in the future.
 
 **note: ferrissay has only been tested on GNU/linux, stability/full functionality and compilation on other OSes is not guaranteed.**
 
-- current version: 0.1.1 BETA
+- current version: v0.1.1-beta
 - current stable: none
-- AI code: none
 - for future releases: see "Dev Notes"
 
 # Dev Notes / Known Issues
@@ -49,11 +48,11 @@ visual bugs for now but i'm gonna fix them in the future.
 
 # Changelog
 
-## release 0.1.0 BETA - packaged
+## release v0.1.1-beta - packaged
 
 just the standard program, starting point for future releases
 
-## release 0.1.1 BETA - packaged
+## release v0.1.1-beta - packaged
 
 - added ferries.claws_down and made it default
 - added very basic argument parsing logic
