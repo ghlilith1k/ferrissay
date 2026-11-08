@@ -23,7 +23,7 @@ visual bugs for now but i'm gonna fix them in the future.
     make
 
 # Usage:
-    ferrissay [something..]
+    ferrissay [-u] [message]
 
 # About
 **note: ferrissay has only been tested on GNU/linux, stability/full functionality and compilation on other OSes is not guaranteed.**

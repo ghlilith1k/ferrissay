@@ -70,7 +70,7 @@ fn main() {
     // MAIN LOGICS
     // check if atleast one word is present, if not, print help message and terminate program early.
     if ferris.words.len() == 1 {
-        println!("ferrissay version 0.1.1 BETA, (C) 2026 ghlilith1k\nusage: ferrissay [-d] [message]");
+        println!("ferrissay version 0.1.1 BETA, (C) 2026 ghlilith1k\nusage: ferrissay [-u] [message]");
         return
     }
     // checks if user explicited claws up Ferris, if yes, switch to claws up and delete flag from arguments.
