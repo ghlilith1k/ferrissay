@@ -81,6 +81,13 @@ fn main() {
 
     // checks if user explicited claws up Ferris, if yes, switch to claws up and delete flag from arguments.
     if ferris.words[1].contains("-u") {
+        // re-checks if atleast one word is present, this time with the argument.
+        if ferris.words.len() == 2 {
+            println!(
+                "ferrissay v0.1.1-beta, (c) 2026 ghlilith1k\nsee https://github.com/ghlilith1k/ferrissay for details\n\x20usage: ferrissay [-u] [message]"
+            );
+            return;
+        }
         ferris.claws_up_check = true;
         ferris.words.remove(1);
     }
@@ -104,7 +111,7 @@ fn main() {
         ferris.text_box_lines_bottom.push_str("-")
     }
 
-    // pushes claws up Ferris if -u flag is given, if else, push the claws down Ferris.
+    // pushes claws tup Ferris if -u flag is given, if else, push the claws down Ferris.
     if ferris.claws_up_check {
         ferris.crab.push_str(ferris.claws_up);
     } else {
