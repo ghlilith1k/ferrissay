@@ -9,7 +9,7 @@
 // This program is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
+// GNU Generustal Public License for more details.
 
 // You should have received a copy of the GNU General Public License along
 // with this program; if not, write to the Free Software Foundation, Inc.,
@@ -36,15 +36,17 @@ fn main() {
         text_box_lines_count: u32,
         // check user declared claws-down argument.
         claws_up_check: bool,
-        // the mighty Ferris himself.
+        // Ferris itself.
+        crab: String,
+        // Ferris with his claws down.
         claws_down: &'a str,
-        // same guy, just with his claws up in the air.
+        // Ferris with his claws up.
         claws_up: &'a str,
     }
 
     // VARIABLES
 
-    // every words the user wrote.
+    // defines Ferris struct.
     let mut ferris = Ferris {
         words: env::args().collect(),
         text_box_message: String::new(),
@@ -52,15 +54,16 @@ fn main() {
         text_box_lines_top: String::new(),
         text_box_lines_count: 0,
         claws_up_check: false,
+        crab: String::new(),
         claws_down: r"
-        *
-         * /^^^^^\
+        \
+         \ /^^^^^\
           /  0  0 \
          \\____v__//
           \\<   >//",
         claws_up: r"
-        *
-       U * /^^^^^\   U
+        \
+       U \ /^^^^^\   U
         \_/  0  0 \_/
           \ ___v__/
           \\     //",
@@ -98,27 +101,24 @@ fn main() {
     // pushes all text boxt lines chars minus one for pretty formatting.
     for _ in 0..ferris.text_box_lines_count - 1 {
         ferris.text_box_lines_top.push_str("_");
-        ferris.text_box_lines_bottom.push_str("r")
+        ferris.text_box_lines_bottom.push_str("-")
+    }
+
+    // pushes claws up Ferris if -u flag is given, if else, push the claws down Ferris.
+    if ferris.claws_up_check {
+        ferris.crab.push_str(ferris.claws_up);
+    } else {
+        ferris.crab.push_str(ferris.claws_down);
     }
 
     // PRINTING
 
     // very confusing formatting, isn't it?
-    if !ferris.claws_up_check {
-        println!(
-            " _{}_\n< {}>\n -{}-{}",
-            ferris.text_box_lines_top,
-            ferris.text_box_message,
-            ferris.text_box_lines_bottom,
-            ferris.claws_down
-        )
-    } else {
-        println!(
-            " _{}_\n< {}>\n -{}-{}",
-            ferris.text_box_lines_top,
-            ferris.text_box_message,
-            ferris.text_box_lines_bottom,
-            ferris.claws_up
-        )
-    }
+    println!(
+        " _{}_\n< {}>\n -{}-{}",
+        ferris.text_box_lines_top,
+        ferris.text_box_message,
+        ferris.text_box_lines_bottom,
+        ferris.crab
+    )
 }
