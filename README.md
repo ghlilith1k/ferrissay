@@ -3,7 +3,7 @@
 a cowsay remake using Rust's mascot "Ferris", written in Rust, obviously
 
 <p align="center">
-  <img src="https://github.com/ghlilith1k/ferrissay/blob/main/assets/ferrissay.png" alt="ferrissay preview"/>
+  <img src="https://github.com/ghlilith1k/ferrissay/blob/main/assets/preview.png" alt="ferrissay preview"/>
 </p>
 
 Copyright (c) 2026 ghlilith1k - GNU/GPLv2 or later
@@ -30,7 +30,7 @@ visual bugs for now but i'm gonna fix them in the future.
 
 **note: ferrissay has only been tested on GNU/linux, stability/full functionality and compilation on other OSes is not guaranteed.**
 
-- current version: v0.1.1-beta
+- current version: v0.1.2-beta
 - current stable: none
 - total lines of code: 125
 - for future releases: see "Dev Notes"
@@ -61,3 +61,8 @@ just the standard program, starting point for future releases
 - fixed first-argument bug, now the command itself doesn't get printed
 - formatted code
 - some other small fixes...
+
+## release v0.1.2-beta - pending
+
+- modified ferrisay claws pushing method
+- modified design

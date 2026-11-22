@@ -1,8 +1,8 @@
 install:
-	@echo "ferrissay v0.1.1-beta, (c) 2026 ghlilith1k"
+	@echo "ferrissay v0.1.2-beta, (c) 2026 ghlilith1k"
 	@echo "see https://github.com/ghlilith1k/ferrissay for details"
 	@echo "running on:"
-	@uname -o
+	@grep "PRETTY_NAME" /etc/os-release | cut -d'=' -f2
 	@echo "compiling and installing ferrissay v0.1.1-beta"
 	@echo "please wait..."
 	@cargo build --release --quiet
